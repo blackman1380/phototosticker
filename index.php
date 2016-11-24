@@ -1,6 +1,6 @@
 <?php
-define('API_KEY', 'Your Token');
-$admin = '68747297';
+define('API_KEY', '284411525:AAGP6og_n7q6W8NNLchX1U1ixft-Ne58vTs');
+$admin = '266236630';
 function api($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
     $ch = curl_init();
@@ -46,10 +46,10 @@ function r($command,$text){
   return str_replace(" ","",$i);
 }
 
-$server = "dbsserver";
-$username = "usernamedb";
-$password = "passworddb";
-$dbs = "databasename";
+$server = "bdaymxcgz-mysql.services.clever-cloud.com";
+$username = "ujw0na2xvrdqlcyn";
+$password = "WTzR92x2cKjqjchIqXb";
+$dbs = "ujw0na2xvrdqlcyn";
 $db = new mysqli($server, $username, $password, $dbs);
 $content = file_get_contents("php://input");
 $u = json_decode($content, true);
